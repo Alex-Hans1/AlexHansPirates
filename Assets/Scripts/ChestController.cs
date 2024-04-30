@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChestController : MonoBehaviour
 {
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,12 @@ public class ChestController : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player" && Input.GetKey(KeyCode.E))
+        {
+            animator.SetTrigger("Dig");
+        }
     }
 }

@@ -21,6 +21,10 @@ public class Timer : MonoBehaviour
         int minutes = 10 + Mathf.FloorToInt(timer_time / 60);
         int seconds = Mathf.FloorToInt(timer_time % 60);
         timer_text.text = string.Format("{0:00}:{1:00}am", minutes, seconds);
+        if(minutes >= 12)
+        {
+
+        }
         Debug.Log(minutes);
         Debug.Log(seconds);
     }

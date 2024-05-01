@@ -16,7 +16,7 @@ public class ChestController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<GameObject>().SetActive(false);
+        
     }
 
     // Update is called once per frame

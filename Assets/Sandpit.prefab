@@ -5006,7 +5006,7 @@ GameObject:
   - component: {fileID: 202607009921890846}
   - component: {fileID: 6334702466449919009}
   - component: {fileID: 7118693745726791027}
-  - component: {fileID: 6210531776793152412}
+  - component: {fileID: 5925154701552089688}
   m_Layer: 0
   m_Name: Sandpit
   m_TagString: Untagged
@@ -5088,8 +5088,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6334702466449919009}
---- !u!65 &6210531776793152412
-BoxCollider:
+  GameObject: {fileID: 0}
+  scoreobj: {fileID: 0}
+--- !u!136 &5925154701552089688
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5106,9 +5108,11 @@ BoxCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.06, y: 0.04, z: 0.06}
-  m_Center: {x: 0, y: 0.05, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.06
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.03, z: 0}
 --- !u!1001 &6166981861144466783
 PrefabInstance:
   m_ObjectHideFlags: 0

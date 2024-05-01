@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         timer_text.text = string.Format("{0:00}:{1:00}am", minutes, seconds);
         if(minutes >= 12)
         {
-
+            //End experience
         }
         Debug.Log(minutes);
         Debug.Log(seconds);

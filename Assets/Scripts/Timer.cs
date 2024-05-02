@@ -25,6 +25,10 @@ public class Timer : MonoBehaviour
         if(minutes >= 12)
         {
             animator.SetTrigger("End");
+            if (Input.GetKeyDown(KeyCode.Escape)) 
+            {
+                Application.Quit();
+            }
         }
         Debug.Log(minutes);
         Debug.Log(seconds);

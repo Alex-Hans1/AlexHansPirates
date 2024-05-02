@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timer_text;
     float timer_time;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +21,10 @@ public class Timer : MonoBehaviour
         timer_time += Time.deltaTime;
         int minutes = 10 + Mathf.FloorToInt(timer_time / 60);
         int seconds = Mathf.FloorToInt(timer_time % 60);
-        timer_text.text = string.Format("{0:00}:{1:00}am", minutes, seconds);
+        timer_text.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         if(minutes >= 12)
         {
-            //End experience
+            animator.SetTrigger("End");
         }
         Debug.Log(minutes);
         Debug.Log(seconds);
